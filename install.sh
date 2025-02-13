@@ -135,6 +135,7 @@ install_base() {
         ;;
     alpine)
         apk update&&apk add wget curl tar tzdata -l
+        ;;
     *)
         apt-get update && apt install -y -q wget curl tar tzdata
         ;;
